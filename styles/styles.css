@@ -1,21 +1,29 @@
+:root {
+  --nav-background-color: #1E2021;
+  --text-color: #1E2021;
+  --box-shadow: 0 0 30px #808080;
+  --border: 1px solid black;
+  --text-align: center;
+}
+
 nav {
-  background-color: #1E2021;
+  background-color: var(--nav-background-color);
   padding: 10px;
 }
 nav a {
-  color: white;
+  color: #eee;
   display: block;
   padding: 20px;
 }
 h1 {
-    color: #1E2021;
+    color: var(--text-color);
 }
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--border);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--box-shadow);
 }
 p {
     padding: 0;
@@ -29,15 +37,16 @@ aside{
     border: 1px solid rgb(0 0 0 / 0.2); 
     padding: 1rem;
     background-color: #eee;
-    color: #1E2021;
-    text-align: center;
+    color: var(--text-color);
+    text-align: var(--text-align);
 }
 aside img {
   width: 200px;
   height: auto;
+  box-shadow: var(--box-shadow);
 }
 footer{
   margin-top: 15px;
-  border-top: 1px solid #000;
-  text-align: center;
+  border-top: var(--border);
+  text-align: var(--text-align);
 }
