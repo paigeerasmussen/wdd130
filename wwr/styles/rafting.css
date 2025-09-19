@@ -26,7 +26,9 @@ header, main, footer {
 
 h1, h2 {
   font-family: var(--heading-font);
-  color: var(--primary-color);
+  color: #eee;
+  background-color: var(--primary-color);
+  padding: 8px;
 }
 
 nav, p, section, article {
@@ -61,11 +63,11 @@ nav, p, section, article {
 
 .hero article {
     position: absolute;
-    bottom:20px;
-    width: 100%;
-    padding: 16px;
-    opacity: 0.8;
-    text-align: center;
+    bottom:10px;
+    width: 95%;
+    padding: 12px;
+    opacity: 0.9;
+    text-align: left;
     background-color: var(--accent2-color);
     color: var(--primary-color)
 }
@@ -75,4 +77,10 @@ nav, p, section, article {
     width: 120px;
     margin-left: 12px;
     border-radius: 6px;
+}
+
+.socialmedia img {
+  width: 40px;
+  height: auto;
+  margin: 0 4px;
 }
