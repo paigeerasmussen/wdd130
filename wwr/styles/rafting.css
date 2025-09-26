@@ -100,7 +100,7 @@ nav, p, article {
 
 .hero article {
   position: absolute;
-  bottom:10px;
+  bottom:50px;
   width: 95%;
   padding: 12px;
   opacity: 0.9;
