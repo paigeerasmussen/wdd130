@@ -7,7 +7,7 @@
 :root {
   --primary-color: #11272C; /* Gunmetal */
   --secondary-color: #2F879D; /* Munsell blue */
-  --tertiary-color: #0D7270; /* Caribbean current */
+  --tertiary-color: #7fb5b3; /* Caribbean current */
   --accent1-color: #DEC668; /* Citron */
   --accent2-color: #CFECF2; /* Light cyan */
   --heading-font: "Times New Roman", "Georgia", serif;
@@ -36,8 +36,6 @@ header nav ul {
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 header nav li {
@@ -56,13 +54,12 @@ header nav a {
   height: 100%
 }
 
-
 header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
-h1, h2 {
+h2 {
   font-family: var(--heading-font);
   color: #eee;
   background-color: var(--primary-color);
@@ -79,16 +76,17 @@ nav, p, article {
   position: relative;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  }
+}
 
 .hero img {
   display: block;
   width: 100%;
   height: auto;
-  }
+}
 
 .hero h1 {
   position: absolute;
+  font-family: var(--heading-font);
   top: 20px;
   width: 100%;
   padding: 16px;
@@ -136,22 +134,13 @@ nav, p, article {
   grid-row: 1;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  background-color: var(--accent2-color);
-}
-
 .socialmedia {
   display: flex;
   justify-content: flex-end;
 }
 
 .socialmedia img {
-  justify-content: flex-end;
   width: 40px;
-  height: auto;
   margin: 0 4px;
 }
 
@@ -164,10 +153,117 @@ footer {
   padding: .5rem;
 }
 
-.adventure img {
+.adventure img, .serve img {
   width: 150px;
   height: auto;
   grid-row: 1;
+}
+
+.contact-info {
+  font-family: var(--heading-font);
+  text-align: center;
+  padding: 1px;
+}
+
+.contact-info h1 {
+  margin: .5rem;
+  padding: .5rem;
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  border: none;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  grid-column: 2;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.contact-form input, .radio-group input, .textarea-group textarea, .checkbox input{
+  padding: .5rem;
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+}
+
+.contact-form, .radio-group, .textarea-group {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: .25rem;
+}
+
+.contact-form label, .radio-group label, .textarea-group label {
+  text-align: left;
+  margin-right: 1rem;
+}
+
+.radio-group label, .textarea-group label {
+  align-self: start;
+}
+
+.radio-options {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+.radio-options label {
+  text-align: left;
+}
+
+.checkbox {
+  gap: .5rem;
+  margin: .5rem;
+}
+
+button {
+  grid-column: span 2;
+  margin: 1rem;
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+  border: 1px solid rgb(0 0 0 / .2);
+  border-radius: .25rem;
+  padding: .5rem;
+}
+
+iframe {
+  margin-top: 2rem;
+}
+
+.serve {
+  border: .2rem solid var(--primary-color);
+  color: var(--primary-color);
+  margin: 1rem 0rem;
+  padding: 0;
+}
+
+.serve h2 {
+  color: var(--primary-color);
+  background-color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.serve div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  place-items: center;
+} 
+
+footer {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: var(--accent2-color);
 }
 
 footer p {
